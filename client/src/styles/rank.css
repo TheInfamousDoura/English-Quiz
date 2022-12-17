@@ -1,0 +1,36 @@
+.name {
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: bold;
+}
+
+.results-container {
+  font-weight: bold;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.results-title {
+  font-size: 1.5em;
+  color: #646464;
+  text-transform: uppercase;
+}
+.results-value {
+  font-size: 2em;
+  color: black;
+}
+
+.divider {
+  height: 2px;
+  width: 100%;
+  background-color: #ddd;
+}
+
+@media only screen and (min-width: 900px) {
+  .divider {
+    height: 100%;
+    width: 2px;
+  }
+}

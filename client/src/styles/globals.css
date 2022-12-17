@@ -1,0 +1,58 @@
+.card-design {
+  margin: auto 0;
+  border-radius: 1.5rem;
+  box-shadow: 2px 4px 52px rgba(0, 0, 0, 0.25);
+  min-height: 40%;
+  padding: 20px;
+  min-width: 60%;
+}
+
+.card-design-header {
+  color: black;
+  text-align: center;
+  border: 0;
+  background-color: white;
+  font-weight: 800;
+  font-size: 2em;
+  padding: 1.5rem 1rem;
+  border-radius: 2rem;
+}
+
+.card-design-body {
+  color: #6f6f6f;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+@media only screen and (min-width: 1200px) {
+  .card-design {
+    min-height: 50%;
+    width: 60%;
+    margin: 0 auto;
+    padding: 40px 30px;
+  }
+
+  .card-design-body {
+    padding: 0px 40px;
+  }
+}
+
+.input-name {
+  width: 90%;
+  border: 0;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+}
+
+.input-name:focus {
+  outline: none;
+  border: 0;
+}
+
+@media only screen and (min-width: 900px) {
+  .input-name {
+    width: 50%;
+  }
+}

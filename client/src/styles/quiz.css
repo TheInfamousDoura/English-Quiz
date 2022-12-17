@@ -1,0 +1,111 @@
+.answer {
+  width: 80%;
+  background-color: white;
+  border: 2px solid black;
+  padding: 30px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 1.2em;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.answer:hover {
+  background-color: blue;
+}
+
+.answer-correct {
+  width: 80%;
+  position: relative;
+  background-color: blue;
+  color: white;
+  border: 0px solid black;
+  padding: 30px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 1.2em;
+  transition: all 0.35s;
+  transform: scale(1.2);
+}
+
+.answer-correct::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0%;
+  z-index: -1;
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: #59cd90;
+  -webkit-animation: scale-up-hor-center 0s cubic-bezier(0.39, 0.575, 0.565, 1)
+    both;
+  animation: scale-up-hor-center 0s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+.answer-wrong {
+  width: 80%;
+  background-color: blue;
+  color: white;
+  border: 0;
+  padding: 30px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 1.2em;
+  transition: all 0.35s;
+  transform: scale(1.2);
+}
+
+.answer-wrong::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0%;
+  z-index: -1;
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: #ee6352;
+  -webkit-animation: scale-up-hor-center 0s cubic-bezier(0.39, 0.575, 0.565, 1)
+    both;
+  animation: scale-up-hor-center 0s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+.answer-disabled {
+  width: 80%;
+  background-color: #bebebe;
+  color: #646464;
+  border: 2px solid black;
+  padding: 30px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+@-webkit-keyframes scale-up-hor-center {
+  0% {
+    width: 50%;
+    border: 0;
+  }
+  100% {
+    width: 100%;
+    border: 2px solid black;
+  }
+}
+@keyframes scale-up-hor-center {
+  0% {
+    width: 50%;
+    border: 0;
+  }
+  100% {
+    width: 100%;
+    border: 2px solid black;
+  }
+}
+
+.question-container {
+  font-size: 5em;
+  font-weight: bold;
+  text-align: center;
+}
